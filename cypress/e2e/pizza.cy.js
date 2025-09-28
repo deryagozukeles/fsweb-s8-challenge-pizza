@@ -1,12 +1,12 @@
 describe("OrderPizza Component Testleri", () => {
 
-  
+ 
   it("İsim inputuna metin girilebiliyor", () => {
     cy.visit("http://localhost:5173/siparis"); 
     cy.get('input[name="isim"]').type("Derya").should("have.value", "Derya");
   });
 
-  
+ 
   it("Birden fazla malzeme seçilebiliyor", () => {
     cy.visit("http://localhost:5173/siparis"); 
     cy.get('input[name="malzemeler"][value="Pepperoni"]').check().should("be.checked");

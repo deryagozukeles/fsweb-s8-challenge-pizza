@@ -12,14 +12,11 @@ function Home(){
                 <img className="logo" src={logo}/>
                 <h1 className="title-container">KOD ACIKTIRIR<br/>PIZZA, DOYURUR</h1>
                 <Link to="/siparis">
-                <button class="order-button">ACIKTIM</button>
+                <button className="order-button">ACIKTIM</button>
                 </Link>
                 
                 </div>
         </div>
-  
-  
-        
         </>
     )
 }
